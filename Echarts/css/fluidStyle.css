@@ -1,0 +1,8 @@
+.container-fluid{width:100% !important;}
+
+.head-title{width: 35%;}
+.head-right{width: 65%;}
+#left,#right{height: 100%;}
+#left{width: 30%;}
+#main{width: 50%;}
+#right{width: 20%;}

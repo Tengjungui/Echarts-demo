@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>设备运营情况图</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 默认是固定宽， fluidStyle.css是全屏样式-->
+    <link rel="stylesheet" href="css/fluidStyle.css">
+  </head>
+  <body>
+
+  <div class="container-fluid clearfix">
+
+      <div class="header clearfix">
+        <h1 class="head-title pull-left">设备运营情况图</h1>
+        <div class="pull-right head-right">
+          <h3 class="yearTime pull-right"><!--2017年55月24日星期五 55:40:56--></h3>
+        </div>
+      </div>
+
+      <div id="left" class="pull-left">
+        <div class="wrap">
+            <h5 class="left-title"><p class="decorate-title-border"></p><p class="ph">24小时并发走势</p></h5>
+          <div class="box clearfix">
+            <div class="left-pic">
+              <h5 class="title-h5">并发总数</h5>
+              <div class="left-mark">
+                <span class="timer" id="count-number" data-to="847" data-speed="1000">530</span>
+                <b>线</b>
+              </div>
+            </div>
+            <div id="leftTop"></div>
+            <i class="dot"></i>
+          </div>
+        </div>
+        <div class="wrap">
+          <h5 class="left-title"><p class="decorate-title-border"></p><p class="ph">24小时设备走势</p></h5>
+          <div class="box clearfix">
+            <div class="left-pic">
+              <h5 class="title-h5">在线设备总数</h5>
+              <div class="left-mark">
+                <span class="timer" id="count-number" data-to="530" data-speed="1200">530</span>
+                <b>台</b>
+              </div>
+            </div>
+            <div id="leftCenter"></div>
+            <i class="dot"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="main" class="pull-left"></div>
+
+      <div id="right" class="pull-left">
+        <div id="rightMain">
+          <h5 class="left-title"><p class="decorate-title-border right-border"></p><p class="ph">已开通设备公司</p></h5>
+          <table class="device-table">
+            <thead>
+              <tr>
+                <th>公司名</th>
+                <th>设备数</th>
+                <th>并发数</th>
+              </tr>
+            </thea>
+            <tbody>
+              <tr>
+                <td>云企盛鼎</td>
+                <td>20</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>鼎信通达</td>
+                <td>100</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>阿里巴巴</td>
+                <td>10</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>百度</td>
+                <td>20</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>腾迅</td>
+                <td>33</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>新浪科技</td>
+                <td>67</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>小米科技</td>
+                <td>777</td>
+                <td>666</td>
+              </tr>
+              <tr>
+                <td>华为</td>
+                <td>999</td>
+                <td>555</td>
+              </tr>
+            </tbody>
+          </table>
+          <i class="dot"></i>
+        </div>
+
+
+
+      </div>
+  </div>
+
+    <div class="show-fixed">
+        <div class="upDown">
+            <img src="img/up-show.png" width="228" height="35" />
+        </div>
+        <div class="fixed-content">
+
+          <div class="autotype" id="autotype">
+             <p>Hypertext Transfer Protocol -- HTTP/1.1</p>
+             <br>
+             <p>Status of this Memo</p>
+             <p>This document specifies an Internet standards track protocol for the Internet community, and requests discussion and suggestions for improvements. Please refer to the current edition of the "Internet Official Protocol Standards" (STD 1) for the standardization state and status of this protocol. Distribution of this memo is unlimited.</p>
+             <p>Status of this Memo</p>
+
+          </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+  <!--  <script src="js/echarts-all.js"></script>-->
+    <script src="echarts/build/dist/echarts.js"></script>
+    <script src="zrender/src/zrender.js"></script>
+
+    <!--echarts-->
+
+    <script src="js/main.js"></script>
+    <script src="js/leftTop.js"></script>
+    <script src="js/leftCenter.js"></script>
+
+
+    <script src="js/page.js"></script>
+
+
+  </body>
+</html>
